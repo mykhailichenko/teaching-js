@@ -13,5 +13,9 @@ let users = [
     }
   ];
   
-  
+  function byField(arr){
+    arr.sort((a,b) => a.name > b.name ? 1 : -1);
+  }
+  byField(users);
+
   console.log(users);
